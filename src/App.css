@@ -28,6 +28,120 @@
   color: #61dafb;
 }
 
+.select{
+    display: block;
+    width: 15rem;
+    height: 3rem;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgba(4, 231, 4, 0.542);
+}
+
+.custom-dropdown-container {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-header::after {
+    content: '\25BC'; /* Unicode character for a downward arrow */
+    font-size: 16px;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #4CAF50; /* Green border color */
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    z-index: 1;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-option:hover {
+    background-color: #4CAF50; /* Green hover color */
+    color: #fff; /* White text color on hover */
+}
+
+.selected-value {
+    margin-left: 10px;
+}
+
+
+
+.inc-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 50%; /* Make it round */
+    width: 40px; /* Set width and height for a fixed size */
+    height: 40px;
+    font-size: 32px; /* Adjust font size for the plus sign */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.inc-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.plus-sign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the plus sign */
+}
+
+.dec-button {
+    display: inline-block;
+    background-color: #e82626; /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 50%; /* Make it round */
+    width: 40px; /* Set width and height for a fixed size */
+    height: 40px;
+    font-size: 32px; /* Adjust font size for the plus sign */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.dec-button:hover {
+    background-color: #9d1313; /* Darker green on hover */
+}
+
+.negative-sign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the plus sign */
+}
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
